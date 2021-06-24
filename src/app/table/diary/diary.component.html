@@ -11,7 +11,7 @@
     </textarea>
   </mat-form-field>
   <div *ngIf="!isVisible" class="emoji">
-    <emoji-mart class="emoj" [enableSearch]="false"
+    <emoji-mart [enableSearch]="false"
                 [showPreview]="false"
                 (emojiClick)="addEmoji($event)">
     </emoji-mart>
@@ -25,7 +25,7 @@
                 (click)="isVisible = !isVisible">keyboard
       </mat-icon>
     </button>
-    <button (click)="addPostHandle()"
-            mat-flat-button color="primary">Save</button>
+    <button [class.save-btn--toggle]="!isVisible" class="save-btn" (click)="addPostHandle()"
+            mat-flat-button>Save</button>
   </div>
 </div>

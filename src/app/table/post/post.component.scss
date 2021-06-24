@@ -1,5 +1,7 @@
+@import "src/assets/variables";
+
 .post {
-  background-color: #f3f3f3;
+  background-color: $system-grays-silver-light;
   border-radius: 10px;
   padding: 6px;
   margin-bottom: 10px;
@@ -7,7 +9,7 @@
 }
 
 .date {
-    color: blue;
+    color: $primary-indigo;
     font-size: 12px;
     margin: 0;
 }

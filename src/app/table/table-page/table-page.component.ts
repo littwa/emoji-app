@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-table-page',
@@ -7,14 +7,14 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 })
 export class TablePageComponent implements OnInit {
 
-  constructor() { }
+  constructor() { };
 
-  public posts: string[] = []
+  public posts: string[] = [];
 
-  ngOnInit(): void { }
+  ngOnInit(): void { };
 
   addPostChange(post: string): void {
-    this.posts.push(post)
-  }
+    this.posts.push(post);
+  };
 
 }

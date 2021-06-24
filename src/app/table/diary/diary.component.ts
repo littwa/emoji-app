@@ -7,18 +7,19 @@ import { Component, OnInit, Output, ViewChild } from '@angular/core';
   styleUrls: ['./diary.component.scss']
 })
 export class DiaryComponent implements OnInit {
-  public isVisible: boolean = true
-  public value: string = '';
 
-  constructor() { }
+  constructor() { };
 
   @ViewChild('textarea', { static: false }) textarea;
   @Output() onAddPostChange: EventEmitter<string> = new EventEmitter<string>();
 
+  public isVisible: boolean = true;
+  public value: string = '';
+
   ngOnInit(): void { }
 
   addEmoji(e): void {
-    this.value = this.value + e.emoji.native
+    this.value = this.value + e.emoji.native;
   }
 
   addPostHandle(): void {

@@ -1,7 +1,13 @@
+@import "src/assets/variables";
+
 ::ng-deep {
   .diary .mat-form-field-type-mat-input {
    width: 100%;
   }
+  .emoji-mart-bar {
+    display: none;
+  }
+
 }
 
 .diary {
@@ -12,7 +18,7 @@
 .diary .title {
   font-size: 18px;
   font-weight: 500;
-  color: blueviolet;
+  color: $primary-deep-blue;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -27,4 +33,22 @@
 
 .arrow {
   margin:  auto 0;
+}
+
+.save-btn {
+  background-color: $primary-deep-blue;
+  color: $system-grays-silver-light;
+  border-radius: 25px;
+  min-width: 100px;
+  line-height: 30px;
+  height: 30px;
+  font-weight: 400;
+}
+
+.emoji {
+  margin-bottom: 10px;
+}
+
+.save-btn--toggle {
+  min-width: 120px;
 }
