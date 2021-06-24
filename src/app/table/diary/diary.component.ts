@@ -8,10 +8,10 @@ import { Component, OnInit, Output, ViewChild } from '@angular/core';
 })
 export class DiaryComponent implements OnInit {
 
-  constructor() { }
-
   @ViewChild('textarea', { static: false }) textarea;
   @Output() onAddPostChange: EventEmitter<string> = new EventEmitter<string>();
+
+  constructor() { }
 
   public isVisible: boolean = true;
   public value: string = '';

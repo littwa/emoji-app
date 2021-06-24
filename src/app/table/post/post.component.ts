@@ -7,11 +7,11 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PostComponent implements OnInit {
 
-  constructor() { }
+  @Input() content: string;
 
   public date: Date = new Date();
 
-  @Input() content: string;
+  constructor() { }
 
   ngOnInit(): void { }
 
