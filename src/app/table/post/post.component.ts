@@ -7,12 +7,12 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PostComponent implements OnInit {
 
-  constructor() { };
+  constructor() { }
 
   public date: Date = new Date();
 
   @Input() content: string;
 
-  ngOnInit(): void { };
+  ngOnInit(): void { }
 
 }

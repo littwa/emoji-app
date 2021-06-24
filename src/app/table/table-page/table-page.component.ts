@@ -7,14 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TablePageComponent implements OnInit {
 
-  constructor() { };
+  constructor() { }
 
   public posts: string[] = [];
 
-  ngOnInit(): void { };
+  ngOnInit(): void { }
 
   addPostChange(post: string): void {
     this.posts.push(post);
-  };
+  }
 
 }
