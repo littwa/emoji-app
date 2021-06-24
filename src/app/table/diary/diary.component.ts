@@ -11,10 +11,10 @@ export class DiaryComponent implements OnInit {
   @ViewChild('textarea', { static: false }) textarea;
   @Output() onAddPostChange: EventEmitter<string> = new EventEmitter<string>();
 
-  constructor() { }
-
   public isVisible: boolean = true;
   public value: string = '';
+
+  constructor() { }
 
   ngOnInit(): void { }
 
@@ -23,6 +23,9 @@ export class DiaryComponent implements OnInit {
   }
 
   addPostHandle(): void {
+
+    if (!this.value) return;
+
     this.onAddPostChange.emit(this.value);
     this.value = '';
   }

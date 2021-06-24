@@ -6,10 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./table-page.component.scss']
 })
 export class TablePageComponent implements OnInit {
+  public posts: string[] = [];
 
   constructor() { }
-
-  public posts: string[] = [];
 
   ngOnInit(): void { }
 
