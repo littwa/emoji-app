@@ -1,0 +1,6 @@
+<div class="table">
+  <app-diary (onAddPostChange)="addPostChange($event)"></app-diary>
+  <div class="container">
+    <app-post *ngFor="let postCont of posts" [content]="postCont"></app-post>
+  </div>
+</div>
